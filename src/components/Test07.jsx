@@ -9,7 +9,11 @@ If isLoggedIn is false ➔ show "Please log in."
 function Test07() {
   const isLoggedIn = false;
 
-  return <h1>Welcome back!</h1>;
+  return (
+    <h1>
+      <h1>{isLoggedIn ? "Welcome back!" : "Please log in."}</h1>
+    </h1>
+  );
 }
 
 export default Test07;
