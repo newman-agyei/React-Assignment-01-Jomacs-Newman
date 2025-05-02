@@ -9,6 +9,10 @@ function Test10() {
 
   return (
     // Your code here
+    <div>
+      <h1>Dashboard</h1>
+      {isAdmin && <p>You have admin access.</p>}
+    </div>
   );
 }
 
