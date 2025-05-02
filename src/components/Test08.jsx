@@ -5,8 +5,13 @@ Use JSX to render a <ul> list of three favorite fruits.
  */
 
 function Test08() {
+  const fruits = ["Apple", "Banana", "Cherry"];
   return (
-    // Your code here
+    <ul>
+      {fruits.map((fruit, index) => (
+        <li key={index}>{fruit}</li>
+      ))}
+    </ul>
   );
 }
 
